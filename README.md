@@ -1,39 +1,48 @@
 FinTrack – Personal Finance Tracker
 
-**FinTrack** is a simple web-based application built with F# that helps you track your personal financial transactions. It supports categorizing expenses, generating summaries, visualizing data with charts, and exporting to CSV.
+FinTrack is a lightweight and intuitive web application built with F#, designed to help users track and visualize their personal spending habits over time.
 
----
+Motivation
+
+Managing daily expenses is essential, but most people either forget to record them or don't have a tool that's simple enough. FinTrack was created to offer a user-friendly way to record transactions, categorize them, and view meaningful summaries instantly through charts and tables.
 
 Features
 
-- Add transactions (description, amount, date, category)
-- Summary by category and month (text + charts)
-- Filter by date range
-- Export summaries to CSV
-- Delete transactions
-- Search by description or category
+- Add, view, and delete transactions (description, amount, date, category)
+- Summarized expenses by:
+  - Category (e.g. Food, Transport, etc.)
+  - Month
+- CSV export of summaries
+- Filter by search text and date range
+- Visual data summaries via charts (Chart.js)
+- Responsive design for desktop and mobile
 
----
+Try it live
 
-Technologies
+[Live Demo on GitHub Pages](https://github.com/Deryckboiii/fintrack)  
 
-- **Backend:** F# with Giraffe, SQLite, Dapper
-- **Frontend:** HTML, JavaScript, Chart.js
-- **Database:** SQLite (auto-initialized)
+Screenshots
 
----
+Dashboard
+![Dashboard Screenshot](images/dashboard.png)
 
-Getting Started
+
+Technologies Used
+
+- **F#** (.NET 7)
+- **Giraffe** – functional web framework
+- **SQLite** – lightweight embedded database
+- **Chart.js** – data visualization
+- **HTML + JS + CSS** – frontend
+- **GitHub Pages / Render** – deployment
+
+How to run locally
 
 Prerequisites
-- [.NET SDK 6.0+](https://dotnet.microsoft.com/download)
-
-Clone the repository
+- [.NET SDK 7.0+](https://dotnet.microsoft.com/en-us/download)
+- Node.js (for chart building, if needed)
+Running the app
 
 ```bash
-git clone https://github.com/yourusername/FinTrack.git
-cd FinTrack
-
-Run the application
-
+dotnet restore
 dotnet run
