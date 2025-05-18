@@ -4,7 +4,8 @@ FinTrack is a lightweight and intuitive web application built with F#, designed 
 
 Motivation
 
-Managing daily expenses is essential, but most people either forget to record them or don't have a tool that's simple enough. FinTrack was created to offer a user-friendly way to record transactions, categorize them, and view meaningful summaries instantly through charts and tables.
+The goal of the project is to explore functional web development using F#, and provide a lightweight personal finance tracker.
+It demonstrates F# backend logic, data summarization, and basic chart rendering via a web interface.
 
 Features
 
@@ -20,7 +21,12 @@ Features
 
 Try it live
 
-[Live Demo on GitHub Pages](https://github.com/Deryckboiii/fintrack)  
+[Live Demo on GitHub Pages](https://github.com/Deryckboiii/fintrack)
+
+Live Version
+
+You can try the deployed version here:  
+[https://fintrack-app.azurewebsites.net](https://fintrack-app.azurewebsites.net)  
 
 Screenshots
 
