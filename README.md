@@ -12,10 +12,11 @@ Features
 - Summarized expenses by:
   - Category (e.g. Food, Transport, etc.)
   - Month
+  - Weekly
 - CSV export of summaries
 - Filter by search text and date range
 - Visual data summaries via charts (Chart.js)
-- Responsive design for desktop and mobile
+- Responsive design
 
 Try it live
 
