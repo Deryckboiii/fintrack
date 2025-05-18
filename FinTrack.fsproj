@@ -9,6 +9,9 @@
 	<Compile Include="Database.fs" />
 	<Compile Include="Storage.fs" />
     <Compile Include="Program.fs" />
+	  <Content Include="public\**\*">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
   </ItemGroup>
 
   <ItemGroup>
