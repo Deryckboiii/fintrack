@@ -26,7 +26,7 @@ Try it live
 Live Version
 
 You can try the deployed version here:  
-[https://fintrack-app.azurewebsites.net](https://fintrack-app.azurewebsites.net)  
+https://fintrack-app2025-a3f4bzcwaxezagc7.northeurope-01.azurewebsites.net (There is a HTTP error code due to open the website...)
 
 Screenshots
 
