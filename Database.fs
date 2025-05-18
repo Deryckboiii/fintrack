@@ -4,6 +4,7 @@ open System
 open System.Data
 open Microsoft.Data.Sqlite
 open Dapper
+open System.Data.SQLite
 
 module Database =
 
@@ -91,6 +92,20 @@ module Database =
             results.Add(item)
         results |> Seq.toList
 
+    let getWeeklySummary () =
+        use conn: SqliteConnection = new SqliteConnection(connectionString)
+        conn.Open()
+
+        let query = """
+            SELECT 
+                strftime('%Y-W%W', Date) as Week,
+                SUM(Amount) as Total
+            FROM Transactions
+            GROUP BY strftime('%Y-W%W', Date)
+            ORDER BY Week
+        """
+        conn.Query<WeeklySummary>(query) |> Seq.toList
+         
     let deleteTransaction (id: string) =
         use conn = new SqliteConnection(connectionString)
         conn.Open()

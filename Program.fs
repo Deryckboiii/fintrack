@@ -27,6 +27,9 @@ let webApp () =
             route "/summary/month" >=> fun next ctx ->
                 let data = Database.getMonthlySummary()
                 json data next ctx
+            route "/summary/week" >=> fun next ctx ->
+                let weekly = Database.getWeeklySummary()
+                json weekly next ctx
         ]
         POST >=> choose [
             route "/transactions" >=> fun next ctx -> task {

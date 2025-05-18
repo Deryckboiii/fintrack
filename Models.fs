@@ -17,3 +17,7 @@ type MonthlySummary = {
     Month: string
     Total: decimal
 }
+
+type WeeklySummary() =
+    member val Week = "" with get, set
+    member val Total = 0.0 with get, set

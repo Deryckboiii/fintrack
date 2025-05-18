@@ -1,13 +1,9 @@
-# Ignore VS/VSCode settings
-.vs/
-*.user
-*.suo
-
-# Ignore build artifacts
 bin/
 obj/
-
-# Ignore other temp files
-*.log
-*.tmp
+*.db
+*.sqlite
+.env
+.vscode/
+*.user
+.vs/
 *.vsidx
